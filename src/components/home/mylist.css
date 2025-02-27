@@ -1,0 +1,20 @@
+.myliststyling{
+    position: absolute;
+    top: 70px;
+    padding: 30px;
+    /* display: flex;
+    flex-direction: row;
+    overflow-x: scroll; */
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 15px;
+}
+.myliststyling *{
+    color: white;
+}
+.myliststyling > div >button{
+    color: black;
+}
+.myliststyling > .popularstyle1:nth-of-type(5n + 1){
+    transform-origin: left;
+}

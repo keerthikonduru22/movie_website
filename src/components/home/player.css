@@ -1,0 +1,21 @@
+.playerstyle{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-left: 50px;
+    padding: 10px;
+
+}
+.playerstyle > div > iframe{
+    border: 1px solid black;
+}
+.apistyle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.playerstyle *{
+    color: white;
+}

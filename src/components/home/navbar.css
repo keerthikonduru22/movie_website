@@ -1,0 +1,122 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding: 5px;
+    
+    position: fixed;
+    gap: 20px;
+    width: 100%;
+    z-index: 10;  
+    /* background: linear-gradient(to right, #2f2d2c, #24232212); */
+}
+.navbar *{
+    color: white;
+    text-decoration: none;
+}
+.navbarleft *:active{
+    font-weight: bolder;
+
+}
+
+.navbarleft{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+}
+.navbarright {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 5px;
+    padding-right: 10px;
+    margin-right: 30px;
+
+}
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.dropdown1{
+    display: none;
+}
+.dropdown:hover 
+{
+.dropdown1{
+    display: block;   
+    position: absolute;
+    top: 10px;
+
+}
+.dropdown2{
+    position: fixed;
+}
+}
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.searchdisplay > input{
+    color: black;
+}
+input{
+    all: unset;
+    padding: 10px;
+    width:200px;
+    height: 20px;
+    background-color: rgb(232, 224, 224);
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgb(218, 157, 157);
+    color: red;
+}
+.activeclass{
+    font-weight: bolder;
+    color: rgb(248, 244, 244);
+}
+.styelmenubar{
+    display: none;
+}
+.subclass{
+    display: none;
+}
+
+@media (max-width: 840px) {
+    .styelmenubar{
+        display: block;
+        position: relative;
+    
+    }
+    .hide{
+        display: none;
+    }
+    .dropdown{
+        display: none;
+    }
+    .totalmenustyle{
+        display: flex;
+        flex-direction: column;
+    }
+    .subclass{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+    }
+}
+/* .stylescroll{
+    background-color: rgb(77, 73, 73);
+} */

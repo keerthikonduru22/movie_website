@@ -1,0 +1,68 @@
+body {
+    background-color: black;
+
+}
+
+.tvshowstyling {
+
+    /* background-image: linear-gradient(to bottom, #341d1d12 50%, rgba(0, 0, 0, 1) 100%),
+        url('../assests/cards/strangerthings.jpg'); */
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+
+
+}
+.tvshowstying1{
+  color: white;
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+.movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    top: 250px;
+    padding: 20px;
+}
+
+.moviestyling2 {
+    display: block;
+    width: 700px;
+    color: white;
+}
+
+.buttonstyle {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.style1>button {
+    background-color: rgb(169, 60, 60);
+    padding: 10px;
+    width: 100px;
+    color: white;
+    border: 1px solid rgb(169, 60, 60);
+    border-radius: 10px;
+}
+
+.style1>button:active {
+    background-color: white;
+    color: red;
+    border: 1px solid white;
+}
+
+.style2>button {
+    background-color: rgba(169, 60, 60, 0.158);
+    padding: 10px;
+    width: 100px;
+    color: white;
+    border: 1px solid rgba(230, 224, 224, 0.066);
+    border-radius: 10px;
+}

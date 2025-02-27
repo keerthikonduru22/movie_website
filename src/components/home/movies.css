@@ -1,0 +1,9 @@
+.moviesstyling {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+.moviefooter > .stylefooter{
+top: 2300px;
+}

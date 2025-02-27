@@ -1,0 +1,136 @@
+body{
+    background-color: rgb(10, 10, 10);
+   
+}
+.moviestyling{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    /* position: relative; */
+    display: flex;  
+    flex-direction: column;
+   
+}
+.moviestying1{
+    font-size: 50px;
+    color: white;
+    font-weight: bolder;
+}
+.movie{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+position: absolute;
+top: 210px;
+padding: 20px;
+}
+.moviestyling2{
+    display: block;
+    width: 700px;
+    color: white;
+}
+.buttonstyle{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+.style1 > button{
+ background-color: rgb(169, 60, 60);
+ padding: 10px;
+ width: 100px;
+ color: white;
+ border: 1px solid rgb(169, 60, 60);
+ border-radius: 10px;
+}
+.style1> button:active{
+    background-color: white;
+    color: red;
+    border: 1px solid white;
+}
+.style2>button {
+    background-color: rgba(169, 60, 60, 0.158);
+    padding: 10px;
+    width: 100px;
+    color: white;
+    border: 1px solid rgba(230, 224, 224, 0.066);
+    border-radius: 10px;
+}
+.cardmylist {
+   position: relative;
+   top: 540px;
+   
+}
+.cardmylist > div > div > .myliststyling{
+    display: flex;
+    position: relative;
+    overflow-x: scroll;
+    top: 0;
+    padding: 5px;
+    padding-left: 20px;
+}
+.cardmylist > div > div > .title{
+    display: block;
+}
+.cardmylist > div > div{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.cardmylist>div>div>.myliststyling::-webkit-scrollbar {
+    width: 0;
+}
+.cardmylist>div{
+    display: none;
+}
+.footstyle > .stylefooter{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Media Queries */
+@media (max-width: 800px) {
+.moviestyling2 p{
+    width: 600px;
+    height: 100px;
+    text-align: justify;
+    object-fit: cover;
+}
+.moviestying1{
+    font-size: 2rem;
+}
+.moviestyling{
+    box-sizing: border-box;
+    width: 850px;
+    background-size: cover;
+}
+.buttonstyle{
+    margin-top: auto;
+    height: auto;
+}
+}
+@media (max-width: 750px) {
+    .moviestyling2 p {
+        width: 400px;
+        text-align: justify;
+        object-fit: cover;
+    }
+
+    .moviestying1 {
+        font-size: 2rem;
+    }
+
+    .moviestyling {
+        background-size: cover;
+    
+        background-position: center;
+    }
+
+    .buttonstyle {
+        margin-top: auto;
+        height: auto;
+    }
+}

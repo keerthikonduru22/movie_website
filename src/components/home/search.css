@@ -1,0 +1,11 @@
+.serachcardstyle{
+    position: absolute;
+    top: 65px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 30px;
+    gap: 20px; 
+}
+.serachcardstyle > .popularstyle1:nth-of-type(5n+1){
+    transform-origin: left;
+}

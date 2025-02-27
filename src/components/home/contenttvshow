@@ -1,0 +1,36 @@
+import React,{useEffect,useState} from 'react'
+import './content.css'
+import { Link } from 'react-router-dom';
+// import cards_data from './contentimage'
+export default function Content ({ title, concept }) {
+  const [ apidata, setapidata ] = useState([])
+  const options = {
+  method: 'GET',
+  headers: {
+    accept: 'application/json',
+    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmMDBhYWUyZGQwYzI5YTlmYTA5NmE2ZTU3ZDAwOGYwNyIsIm5iZiI6MTczOTQyNTk5MS4zNzUsInN1YiI6IjY3YWQ4OGM3YjliMTc5MjRlMmQwYzM2ZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.GriN0VDcoYqFpkpyGAbmcue1tQsIqYMA62VmSqcULR8'
+  }
+};
+  useEffect(() => {
+    fetch(`https://api.themoviedb.org/3/movie/${concept}?language=en-US&page=1`, options)
+      .then(res => res.json())
+      .then(res => setapidata(res.results))
+      .catch(err => console.error(err));
+  })
+
+  return (
+    <div className='hiddenstyle'>
+      <div className='title'>{title}</div>
+      <div className='popularstyle'>
+      {apidata.map((card, index)=>(
+        <div className='popularstyle1' >
+        <Link to={`/player/${card.id}`}>
+          <div key={index}><img src={`https://image.tmdb.org/t/p/w500`+card.backdrop_path} alt='card {index}' style={{width: '200px'}} /></div></Link>
+            <div className='cardname'>{card.original_title}</div>
+        
+      </div>
+      ))}
+      </div>
+      </div>
+  )
+}
