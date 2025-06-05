@@ -117,6 +117,55 @@ input{
         top: 60px;
     }
 }
+.userstyle {
+    position: relative;
+}
+
+.userlogostyle {
+    position: absolute;
+    top: 30px;
+    display: block;
+    width: 500px;
+    right: 70px;
+}
+
+.userlogostyle>h1 {
+    font-size: small;
+
+}
+
+.userlogostyle>.product-card {
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.userlogostyle>.subscription-heading {
+    padding: 5px;
+}
+
+.userlogostyle>.subscription-container >.homelogoutstyle > button {
+    display: none;
+}
+@media (max-width: 750px){
+.navbar{
+    box-sizing: content-box;
+}
+
+}
+@media (max-width: 506px){
+ 
+input{
+    width: 120px;
+}
+.navbarright{
+    gap: 10px;
+}
+}
+@media (max-width: 400px){
+    .navbar{
+        gap: 5px;
+    }
+}
 /* .stylescroll{
     background-color: rgb(77, 73, 73);
 } */

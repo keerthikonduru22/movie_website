@@ -18,3 +18,15 @@
 .myliststyling > .popularstyle1:nth-of-type(5n + 1){
     transform-origin: left;
 }
+@media(max-width: 1200px){
+    .myliststyling{
+    grid-template-columns: auto auto auto auto;
+    }
+}
+@media(max-width: 900px) {
+    .myliststyling {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

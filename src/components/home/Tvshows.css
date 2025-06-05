@@ -66,3 +66,59 @@ body {
     border: 1px solid rgba(230, 224, 224, 0.066);
     border-radius: 10px;
 }
+@media (max-width: 800px) {
+    .moviestyling2 p {
+        width: 600px;
+        height: 100px;
+        text-align: justify;
+        object-fit: cover;
+    }
+
+    .moviestying1 {
+        font-size: 2rem;
+    }
+
+    .tvshowstyling {
+        box-sizing: border-box;
+        width: 850px;
+        background-size: cover;
+    }
+
+    .buttonstyle {
+        margin-top: auto;
+        height: auto;
+    }
+}
+@media (max-width: 700px) {
+    .moviestyling2 p {
+        width: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+    .moviestyling2 p {
+        width: 450px;
+        text-align: justify;
+        object-fit: cover;
+    }
+
+    .moviestying1 {
+        font-size: 2rem;
+    }
+
+    .tvshowstyling {
+        background-size: cover;
+
+        background-position: center;
+    }
+
+    .buttonstyle {
+        margin-top: auto;
+        height: auto;
+    }
+}
+@media (max-width: 500px) {
+    .moviestyling2 p {
+        display: none;
+    }
+}

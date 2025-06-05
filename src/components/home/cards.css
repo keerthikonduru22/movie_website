@@ -44,7 +44,38 @@ padding: 20px;
  color: white;
  border: 1px solid rgb(169, 60, 60);
  border-radius: 10px;
+ 
 }
+
+.style1 a {
+    text-decoration: none;
+
+}
+
+.style1 button {
+    padding: 8px 20px;
+    margin: 10px 0;
+    background-color: #f31818;
+    
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.style1 button:hover {
+    background-color:  rgba(255, 0, 0, 0.589);
+    /* Darker blue when hovered */
+}
+
+.style1 button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(45, 1, 6, 0.5);
+    /* Blue outline on focus */
+}
+
+
 .style1> button:active{
     background-color: white;
     color: red;
@@ -61,6 +92,7 @@ padding: 20px;
 .cardmylist {
    position: relative;
    top: 540px;
+   box-sizing: border-box;
    
 }
 .cardmylist > div > div > .myliststyling{
@@ -70,6 +102,8 @@ padding: 20px;
     top: 0;
     padding: 5px;
     padding-left: 20px;
+    box-sizing: border-box;
+    
 }
 .cardmylist > div > div > .title{
     display: block;
@@ -79,19 +113,55 @@ padding: 20px;
     flex-direction: column;
     padding-left: 10px;
 }
+.cardmylist > div > .mylistnavbar{
+    display: none;
+}
 .cardmylist>div>div>.myliststyling::-webkit-scrollbar {
     width: 0;
 }
-.cardmylist>div{
-    display: none;
-}
+
 .footstyle > .stylefooter{
     display: flex;
     flex-direction: column;
 }
+/* .userstyle{
+    position: relative;
+}
+.userlogostyle{
+    position: absolute;
+    top: 30px;
+    display: block;
+    width: 500px;
+    right: 70px;
+}
+.userlogostyle > h1{
+    font-size: small;
+
+}
+.userlogostyle > .product-card{
+    margin-bottom: 5px;
+    padding: 5px;
+}
+.userlogostyle > .subscription-heading{
+    padding: 5px;
+}
+.userlogostyle > .homelogoutstyle{
+    display: none;
+} */
 
 
 /* Media Queries */
+@media (max-width: 900px){
+    .cardmylist > div > div > .myliststyling{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+        .cardmylist>div>.mylistnavbar {
+            display: none;
+        }
+}
+
 @media (max-width: 800px) {
 .moviestyling2 p{
     width: 600px;
@@ -99,38 +169,89 @@ padding: 20px;
     text-align: justify;
     object-fit: cover;
 }
+.cardmylist>div>div>.myliststyling {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
 .moviestying1{
     font-size: 2rem;
 }
 .moviestyling{
     box-sizing: border-box;
-    width: 850px;
+    width: 800px;
     background-size: cover;
 }
 .buttonstyle{
     margin-top: auto;
     height: auto;
 }
+.cardmylist>div>.mylistnavbar {
+    display: none;
 }
-@media (max-width: 750px) {
+}
+@media (max-width: 700px){
+.moviestyling2 p{
+    width: 500px;
+}
+.cardmylist>div>div>.myliststyling{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.cardmylist>div>.mylistnavbar {
+    display: none;
+}
+.moviestyling {
+    box-sizing: border-box;
+    width: 800px;
+    background-size: cover;
+}
+
+}
+
+@media (max-width: 600px) {
     .moviestyling2 p {
-        width: 400px;
+        width: 450px;
         text-align: justify;
         object-fit: cover;
     }
-
+        
     .moviestying1 {
         font-size: 2rem;
     }
-
-    .moviestyling {
-        background-size: cover;
+                
+        
     
-        background-position: center;
-    }
-
     .buttonstyle {
         margin-top: auto;
         height: auto;
     }
+           .cardmylist>div>div>.myliststyling{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+          .cardmylist>div>.mylistnavbar {
+              display: none;
+          }
+    
 }
+@media (max-width: 500px){
+    
+.moviestyling2 p{
+    width: 300px;
+    display: none;
+}
+.cardmylist>div>div>.myliststyling {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.cardmylist>div>.mylistnavbar {
+    display: none;
+}
+
+} 
+
+

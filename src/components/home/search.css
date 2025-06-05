@@ -9,3 +9,9 @@
 .serachcardstyle > .popularstyle1:nth-of-type(5n+1){
     transform-origin: left;
 }
+@media (max-width: 1030px){
+.serachcardstyle{
+    display: flex;
+    flex-wrap: wrap;
+}
+}

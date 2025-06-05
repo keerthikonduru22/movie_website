@@ -5,6 +5,7 @@ import Content from './content';
 import Footer from './footer';
 import Video from './video';
 import Mylist from './mylist';
+import { Link} from 'react-router-dom';
 import './cards.css'
 export default function Cards() {
   const { videoKey } = useContext(MyListContext);
@@ -32,20 +33,20 @@ export default function Cards() {
         </div>
         <div className='buttonstyle'>
           <div className='style1'>
-            <button>watch</button>
+            <Link to={`/player/movie/${videoKey.id}`}><button>watch</button></Link>
           </div>
           <div className='style2'>
             <button>watch info</button>
           </div>
         </div>
         </div>
-      <div>
+      
       <div><Content type={'movie'} title={'Popular on Netflix'} concept={'popular'} /></div>
       <div><Content type={'movie'} title={'Top Rated'} concept={'top_rated'} /></div>
       <div><Content type={'movie'} title={'Now playing'} concept={'now_playing'} /></div>
           <div><Content type={'movie'} title={'Upcoming'} concept={'upcoming'} /></div>
-          <div className='cardmylist'><Mylist topic={'My list'}/></div>
-      </div>
+           <div className='cardmylist'><Mylist topic={'My list'}/></div>
+      
         <div className='footstyle'><Footer /></div>
          {/* <Video type={'movie'} concept={'popular'} /> */}
         </div>

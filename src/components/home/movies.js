@@ -8,6 +8,7 @@ import './Tvshows.css'
 import './movies.css'
 import Video from './video';
 import Mylist from './mylist';
+import { Link} from 'react-router-dom';
 
 export default function Movies() {
    const { videoKey } = useContext(MyListContext);
@@ -34,7 +35,7 @@ export default function Movies() {
         </div>
         <div className='buttonstyle'>
           <div className='style1'>
-            <button>watch</button>
+           <Link to={`/player/movie/${videoKey.id}`}><button>watch</button></Link>
           </div>
           <div className='style2'>
             <button>watch info</button>
@@ -48,7 +49,7 @@ export default function Movies() {
             <Content type={'movie'} title={'Fantasy movies'} genreid={'14'} />
             <Content type={'movie'} title={'Horror movies'} genreid={'27'} />
         <Content type={'movie'} title={'Top rated movies'} concept={'top_rated'} />
-        <div className='cardmylist'><Mylist topic={'My list'}/></div>
+        <div className='cardmylist'><Mylist topic={'My list'}/></div> 
             
             
 

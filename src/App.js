@@ -13,7 +13,7 @@ import { MyListProvider } from './components/home/contentprovider';
 import Search from './components/home/search';
 import SignUp from './components/signup';
 import Login from './components/login';
-
+import Subscription from './components/subscription';
 export default function App() {
   return (
     <div className='appstyle'>
@@ -29,7 +29,8 @@ export default function App() {
         <Route path='/movies' element={<Movies />} />
           <Route path='/newpopular' element={<Newpopular />} />
             <Route path='/mylist' element={<Mylist />} />  
-            <Route path='/search' element={<Search/>} />
+            <Route path='/search' element={<Search />} />
+            <Route path='/subscription' element={<Subscription />} />
         </Routes>
         </Router>
       

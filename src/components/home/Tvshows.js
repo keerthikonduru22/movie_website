@@ -4,9 +4,10 @@ import MyListContext from './contentprovider';
 import Content from './content';
 import Footer from './footer';
 import Navbar from './navbar';
-// import './Tvshows.css'
+import './Tvshows.css'
 import Video from './video';
 import Mylist from './mylist';
+import { Link} from 'react-router-dom';
 
 export default function Tvshowcard() {
   const { videoKey } = useContext(MyListContext);
@@ -35,7 +36,7 @@ export default function Tvshowcard() {
         </div>
         <div className='buttonstyle'>
           <div className='style1'>
-            <button>watch</button>
+           <Link to={`/player/tv/${videoKey.id}`}><button>watch</button></Link>
           </div>
           <div className='style2'>
             <button>watch info</button>

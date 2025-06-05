@@ -1,6 +1,13 @@
 .newpopularstyle > .hiddenstyle{
     top: 60px;
 }
-.popularfooter > .stylefooter{
+.popularfooter > .stylefooter
+{
    top: 1100px;
 }
+@media (max-width: 400px){
+  .newpopularstyle{
+    width: 400px;
+  }
+}
+
